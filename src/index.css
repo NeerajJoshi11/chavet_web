@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-charcoal: #171615;
+    --color-charcoal-dark: #0b0b0a;
+    --color-charcoal-card: #1f1d1b;
+    --color-warm-ivory: #F7F2E9;
+    --color-warm-ivory-light: #FAF7F2;
+    --color-warm-ivory-dark: #E6DFC8;
+    --color-muted-gold: #C9A96E;
+    --color-muted-gold-light: #E5CA92;
+    --color-muted-gold-dark: #91753B;
+  }
+
+  body {
+    background-color: var(--color-charcoal);
+    color: var(--color-warm-ivory);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #171615;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A96E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5CA92;
+}
+
+/* Gold Gradient & Foil Utilities */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F0DFB7 0%, #C9A96E 50%, #91753B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #C9A96E 0%, #A8894D 100%);
+}
+
+.bg-gold-gradient-hover:hover {
+  background: linear-gradient(135deg, #E5CA92 0%, #C9A96E 100%);
+}
+
+.gold-glow {
+  box-shadow: 0 0 30px rgba(201, 169, 110, 0.2);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 40px rgba(201, 169, 110, 0.35);
+}
+
+/* Editorial Glass & Contrast Cards */
+.editorial-card {
+  background: rgba(31, 29, 27, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover {
+  border-color: rgba(201, 169, 110, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Warm Ivory Light Section Card */
+.ivory-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(201, 169, 110, 0.3);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ivory-card:hover {
+  border-color: #C9A96E;
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(23, 22, 21, 0.08);
+}
