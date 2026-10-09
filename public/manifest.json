@@ -1,0 +1,17 @@
+{
+  "name": "CHAVET | Royal Groomwear",
+  "short_name": "CHAVET",
+  "description": "Custom royal sherwanis, Indo-Western suits and wedding fashion by CHAVET by Rudrakshi Creation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#171615",
+  "theme_color": "#171615",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
